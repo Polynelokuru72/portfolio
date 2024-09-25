@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pauline Lokuru - Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #4CAF50;
+            color: #fff;
+            padding: 30px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        header img {
+            width: 150px;
+            height: auto;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+            position: relative;
+        }
+
+        nav ul li a::after {
+            content: '';
+            display: block;
+            height: 2px;
+            width: 0;
+            background: #FFD700; /* Gold color */
+            transition: width 0.3s;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+        }
+
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        .social-links {
+            margin-top: 10px;
+        }
+
+        .social-links a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+            transition: transform 0.3s;
+        }
+
+        .social-links a:hover {
+            transform: scale(1.2);
+        }
+
+        section {
+            padding: 40px;
+            margin: 20px auto;
+            max-width: 800px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 10px;
+            color: #4CAF50;
+        }
+
+        .portfolio-item {
+            margin: 20px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #4CAF50;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+
+        label {
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        input, textarea {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px;
+            background: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        button:hover {
+            background: #45a049;
+            transform: scale(1.05);
+        }
+
+        .social-links {
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin: 0 10px;
+            color: #4CAF50;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #FFD700; /* Gold color on hover */
+        }
+
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                margin-top: 10px;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="C:\Users\Pauline\Desktop\ml\projects\IMG_20240921_102414_636.jpg" alt="Pauline Lokuru">
+        <h1>Pauline Lokuru</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I’m Pauline Lokuru, a passionate Computer Science student currently pursuing my degree at Meru University of Science and Technology. With a strong foundation in programming, algorithms, and software development, I thrive on solving complex problems and building innovative solutions.</p>
+        <p>I have experience in various programming languages, including Python, Java, and JavaScript, and I’m particularly interested in web development and AI in ML.</p>
+        <p>Throughout my studies, I’ve participated in several hackathons and collaborative projects, which have enhanced my teamwork and communication skills. When I’m not coding, you can find me exploring the latest tech trends or contributing to open-source projects.</p>
+    </section>
+
+    <section id="portfolio">
+        <h2>My Work</h2>
+        <div class="portfolio-item">
+            <h3>Smart Chatbot Assistant</h3>
+            <img src="C:\Users\Pauline\Desktop\ml\projects\download.jpeg" alt="Smart Chatbot Assistant">
+            <p>The Smart Chatbot Assistant is an AI-powered conversational agent designed to enhance user experience by providing instant support and information.</p>
+            <p>This chatbot integrates natural language processing to understand user queries and deliver accurate responses.</p>
+            <p>It can handle a wide range of customer inquiries, from frequently asked questions to product recommendations.</p>
+        </div>
+        <div class="portfolio-item">
+            <h3>Accademic Project</h3>
+            <img src="C:\Users\Pauline\Desktop\ml\projects\download (1).jpeg" alt="Project 2 Description">
+            <p><b>Student Management</b></p>
+            <p>Developed a comprehensive web-based application to manage student records for educational institutions.</p>
+            <p>The system allows administrators to easily add, update, and delete student information while ensuring data integrity and security.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: [paulinelokuru72@gmail.com]</p>
+        <p>Contact: 0758206584 or 098583141</p>
+        <p>If you have any questions or would like to connect, feel free to reach out through the form below or via my social media links!</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Your Name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Your Email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="social-links">
+            <h3>Connect with me on:</h3>
+            <a href="https://www.linkedin.com/in/pauline-lokuru-0923902b4" target="_blank">LinkedIn</a>
+            <a href="https://github.com/Polynelokuru72" target="_blank">GitHub</a>
+            <a href="https://www.facebook.com/yourprofile" target="_blank">Facebook</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Pauline Lokuru. All rights reserved.</p>
+        <p>You can call me Ntitish</p>
+    </footer>
+
+    <script>
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message!');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
